@@ -16,6 +16,10 @@
 		470DD6D61F2ADC3D00B29724 /* RxMogoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DD6D51F2ADC3D00B29724 /* RxMogoUITests.swift */; };
 		470DD6E41F2ADD7A00B29724 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DD6E31F2ADD7A00B29724 /* ViewModel.swift */; };
 		470DD6E61F2B007D00B29724 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DD6E51F2B007D00B29724 /* Operators.swift */; };
+		471824CA1F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */; };
+		472EB1961F3860A000642CBA /* TableViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB1951F3860A000642CBA /* TableViewTestViewController.swift */; };
+		472EB1991F3863A000642CBA /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB1981F3863A000642CBA /* MockService.swift */; };
+		472EB19B1F387B2800642CBA /* TableViewTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB19A1F387B2800642CBA /* TableViewTestViewModel.swift */; };
 		7C864CC9FBEF6CCBE46DA669 /* Pods_RxMogo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243A628DF77BC5FE921F88D /* Pods_RxMogo.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		470DD6D71F2ADC3D00B29724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		470DD6E31F2ADD7A00B29724 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		470DD6E51F2B007D00B29724 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RxMogo+MJRefreshExtension.swift"; path = "RxMogoExtensions/RxMogo+MJRefreshExtension.swift"; sourceTree = "<group>"; };
+		472EB1951F3860A000642CBA /* TableViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTestViewController.swift; sourceTree = "<group>"; };
+		472EB1981F3863A000642CBA /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		472EB19A1F387B2800642CBA /* TableViewTestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTestViewModel.swift; sourceTree = "<group>"; };
 		50547F44E47171BE1E80C41F /* Pods-RxMogo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMogo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMogo/Pods-RxMogo.debug.xcconfig"; sourceTree = "<group>"; };
 		F30E265EB55CAAC7A2669F87 /* Pods-RxMogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMogo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMogo/Pods-RxMogo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +125,8 @@
 		470DD6B41F2ADC3C00B29724 /* RxMogo */ = {
 			isa = PBXGroup;
 			children = (
+				471824C81F395692007B1848 /* RxMogoExtensions */,
+				472EB1971F38638000642CBA /* DemoService */,
 				470DD6B51F2ADC3C00B29724 /* AppDelegate.swift */,
 				470DD6B71F2ADC3C00B29724 /* ViewController.swift */,
 				470DD6B91F2ADC3C00B29724 /* Main.storyboard */,
@@ -125,6 +135,8 @@
 				470DD6C11F2ADC3C00B29724 /* Info.plist */,
 				470DD6E31F2ADD7A00B29724 /* ViewModel.swift */,
 				470DD6E51F2B007D00B29724 /* Operators.swift */,
+				472EB1951F3860A000642CBA /* TableViewTestViewController.swift */,
+				472EB19A1F387B2800642CBA /* TableViewTestViewModel.swift */,
 			);
 			path = RxMogo;
 			sourceTree = "<group>";
@@ -145,6 +157,22 @@
 				470DD6D71F2ADC3D00B29724 /* Info.plist */,
 			);
 			path = RxMogoUITests;
+			sourceTree = "<group>";
+		};
+		471824C81F395692007B1848 /* RxMogoExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */,
+			);
+			name = RxMogoExtensions;
+			sourceTree = "<group>";
+		};
+		472EB1971F38638000642CBA /* DemoService */ = {
+			isa = PBXGroup;
+			children = (
+				472EB1981F3863A000642CBA /* MockService.swift */,
+			);
+			name = DemoService;
 			sourceTree = "<group>";
 		};
 		85533F40F88D0C8DD3FF0CB1 /* Frameworks */ = {
@@ -345,8 +373,12 @@
 			files = (
 				470DD6B81F2ADC3C00B29724 /* ViewController.swift in Sources */,
 				470DD6E61F2B007D00B29724 /* Operators.swift in Sources */,
+				472EB1961F3860A000642CBA /* TableViewTestViewController.swift in Sources */,
+				472EB19B1F387B2800642CBA /* TableViewTestViewModel.swift in Sources */,
+				471824CA1F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift in Sources */,
 				470DD6E41F2ADD7A00B29724 /* ViewModel.swift in Sources */,
 				470DD6B61F2ADC3C00B29724 /* AppDelegate.swift in Sources */,
+				472EB1991F3863A000642CBA /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

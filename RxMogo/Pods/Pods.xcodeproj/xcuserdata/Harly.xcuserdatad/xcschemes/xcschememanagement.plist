@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RxMogo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31B79F521237EABD608BEAA3ADB330B1</key>
+		<key>37D03034DF5D04896CC3F56BA6B07C43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>33C781ABF4736A0BA75A55C569BEE3B5</key>
+		<key>546AFA550DE628D08D3DF3926F2A94E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9348AEB1514FA1FF6DDA006EC4E67D22</key>
+		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FABFA9956568D1ADB1A1C65553FF724A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

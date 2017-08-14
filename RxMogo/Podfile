@@ -5,4 +5,5 @@ use_frameworks!
 target ‘RxMogo’ do
     pod 'RxSwift'
     pod 'RxCocoa'
+	pod ‘MJRefresh’
 end
