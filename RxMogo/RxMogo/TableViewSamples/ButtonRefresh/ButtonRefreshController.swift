@@ -43,6 +43,7 @@ extension ButtonRefreshController
 {
     fileprivate func configRx()
     {
+    
         dataRefresher.asLoadingAnimated(mapTo: viewModel.serviceDriver,
                                         onView: tableView)
             .bind(to: self.tableView.rx.items(cellIdentifier: "Cell")) {
@@ -50,6 +51,9 @@ extension ButtonRefreshController
                 cell.textLabel?.text = demo.name
             }
             .disposed(by: self.disposeBag)
+        
+        
+        
         
         refreshBtn.rx.tap
             .bind(to : dataRefresher)

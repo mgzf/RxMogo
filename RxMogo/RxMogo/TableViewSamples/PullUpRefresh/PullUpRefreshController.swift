@@ -40,16 +40,12 @@ extension PullUpRefreshController
         dataRefresher
             .do(onNext: { (_) in
                 print("start")
-            }, onError: nil, onCompleted: nil, onSubscribe: nil, onSubscribed: nil, onDispose: nil)
+            })
             .flatMap { self.viewModel.serviceDriver }
             .do(onNext: { (_) in
                 self.tableView.mj_footer.endRefreshing()
                 self.tableView.mj_header.endRefreshing()
-            }, onError: nil,
-               onCompleted: nil,
-               onSubscribe: nil,
-               onSubscribed: nil,
-               onDispose: nil)
+            })
             .bind(to: self.tableView.rx.items(cellIdentifier: "Cell")) {
                 (index, demo: Demo, cell) in
                 cell.textLabel?.text = demo.name

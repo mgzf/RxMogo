@@ -35,12 +35,7 @@ extension PublishSubject
                 realAnimation()
             }
             
-        }, onError: nil,
-           onCompleted: nil,
-           onSubscribe: nil,
-           onSubscribed: nil,
-           onDispose: nil)
-            .flatMap { _ in observableDataSource }
+        }).flatMap { _ in observableDataSource }
         .do(onNext: { (_) in
             
             print("endRequest")
@@ -50,11 +45,7 @@ extension PublishSubject
                 realAnimation()
             }
             
-        }, onError: nil,
-           onCompleted: nil,
-           onSubscribe: nil,
-           onSubscribed: nil,
-           onDispose: nil)
+        })
         
         
     }
