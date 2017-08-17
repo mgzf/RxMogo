@@ -36,7 +36,7 @@ class ViewModel
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
         
         searchText.asObservable().subscribe(onNext: { (string) in
-            print(string)
+//            print(string)
         }, onError: nil, onCompleted: nil, onDisposed: nil).disposed(by: disposeBag)
     }
     

@@ -118,12 +118,12 @@ extension TableViewTestViewController
     fileprivate func loadToReload()
     {
         return
-            
-        self.viewModel.serviceDriver
-            .bind(to: tableView.rx.items(cellIdentifier: "Cell")) {
-                (index, demo: Demo, cell) in
-                cell.textLabel?.text = demo.name
-            }
-            .disposed(by: disposeBag)
+//            
+//        self.viewModel.serviceDriver
+//            .bind(to: tableView.rx.items(cellIdentifier: "Cell")) {
+//                (index, demo: Demo, cell) in
+//                cell.textLabel?.text = demo.name
+//            }
+//            .disposed(by: disposeBag)
     }
 }

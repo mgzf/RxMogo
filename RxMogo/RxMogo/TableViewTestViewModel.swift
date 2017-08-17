@@ -20,6 +20,8 @@ class TableViewTestViewModel
     
     let nextPage = PublishSubject<Void>()
     
+    let refreshPage = PublishSubject<Void>()
+    
     var serviceDriver : Observable<[Demo]>!
     
     var finalDemos = [Demo]()
@@ -31,11 +33,21 @@ class TableViewTestViewModel
     func initial()
     {
         serviceDriver = page.asObservable().flatMap{ self.service.provideMock(on: $0).map({ demos -> [Demo] in
-            self.finalDemos.append(contentsOf: demos)
+            if self.page.value == 0
+            {
+                self.finalDemos = demos
+            }
+            else
+            {
+                self.finalDemos.append(contentsOf: demos)
+            }
+            
             return self.finalDemos
         }) }
         
         nextPage.map { self.page.value + 1 }.bind(to: page).disposed(by: disposeBag)
+        
+        refreshPage.map { 0 }.bind(to: page).disposed(by: disposeBag)
     }
     
     

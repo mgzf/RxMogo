@@ -1,19 +1,22 @@
 PODS:
+  - MGProgressHUD (2.1.9)
   - MJRefresh (3.1.12)
-  - RxCocoa (3.5.0):
-    - RxSwift (~> 3.4)
-  - RxSwift (3.5.0)
+  - RxCocoa (3.6.1):
+    - RxSwift (~> 3.6)
+  - RxSwift (3.6.1)
 
 DEPENDENCIES:
+  - MGProgressHUD
   - MJRefresh
   - RxCocoa
   - RxSwift
 
 SPEC CHECKSUMS:
+  MGProgressHUD: a9bdbc7e7df39f691043af39d06fca4838144178
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
-  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
 
-PODFILE CHECKSUM: c75a22623052020d55dd898e660798fd527dfbb1
+PODFILE CHECKSUM: fe96fcbe4a8ee2df769328097012151967c3db04
 
 COCOAPODS: 1.2.1

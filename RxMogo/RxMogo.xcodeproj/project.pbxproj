@@ -17,9 +17,14 @@
 		470DD6E41F2ADD7A00B29724 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DD6E31F2ADD7A00B29724 /* ViewModel.swift */; };
 		470DD6E61F2B007D00B29724 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DD6E51F2B007D00B29724 /* Operators.swift */; };
 		471824CA1F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */; };
+		472A16651F448B2D00E4913C /* ButtonRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472A16641F448B2D00E4913C /* ButtonRefreshController.swift */; };
+		472A16671F44921C00E4913C /* PullDownRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472A16661F44921C00E4913C /* PullDownRefreshController.swift */; };
+		472A16691F44957300E4913C /* PullUpRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472A16681F44957300E4913C /* PullUpRefreshController.swift */; };
 		472EB1961F3860A000642CBA /* TableViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB1951F3860A000642CBA /* TableViewTestViewController.swift */; };
 		472EB1991F3863A000642CBA /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB1981F3863A000642CBA /* MockService.swift */; };
 		472EB19B1F387B2800642CBA /* TableViewTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB19A1F387B2800642CBA /* TableViewTestViewModel.swift */; };
+		4772BAB91F452AA70032C5A7 /* RxMogo+LoadingRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772BAB81F452AA70032C5A7 /* RxMogo+LoadingRefresher.swift */; };
+		4772BABB1F4531650032C5A7 /* RxMogo+MGProgressRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772BABA1F4531650032C5A7 /* RxMogo+MGProgressRefresher.swift */; };
 		7C864CC9FBEF6CCBE46DA669 /* Pods_RxMogo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2243A628DF77BC5FE921F88D /* Pods_RxMogo.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +63,14 @@
 		470DD6E31F2ADD7A00B29724 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		470DD6E51F2B007D00B29724 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RxMogo+MJRefreshExtension.swift"; path = "RxMogoExtensions/RxMogo+MJRefreshExtension.swift"; sourceTree = "<group>"; };
+		472A16641F448B2D00E4913C /* ButtonRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonRefreshController.swift; path = TableViewSamples/ButtonRefresh/ButtonRefreshController.swift; sourceTree = "<group>"; };
+		472A16661F44921C00E4913C /* PullDownRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullDownRefreshController.swift; path = TableViewSamples/PullDownRefresh/PullDownRefreshController.swift; sourceTree = "<group>"; };
+		472A16681F44957300E4913C /* PullUpRefreshController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullUpRefreshController.swift; path = TableViewSamples/PullUpRefresh/PullUpRefreshController.swift; sourceTree = "<group>"; };
 		472EB1951F3860A000642CBA /* TableViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTestViewController.swift; sourceTree = "<group>"; };
 		472EB1981F3863A000642CBA /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		472EB19A1F387B2800642CBA /* TableViewTestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewTestViewModel.swift; sourceTree = "<group>"; };
+		4772BAB81F452AA70032C5A7 /* RxMogo+LoadingRefresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RxMogo+LoadingRefresher.swift"; path = "RxMogoExtensions/RxMogo+LoadingRefresher.swift"; sourceTree = "<group>"; };
+		4772BABA1F4531650032C5A7 /* RxMogo+MGProgressRefresher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RxMogo+MGProgressRefresher.swift"; path = "RxMogoExtensions/RxMogo+MGProgressRefresher.swift"; sourceTree = "<group>"; };
 		50547F44E47171BE1E80C41F /* Pods-RxMogo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMogo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMogo/Pods-RxMogo.debug.xcconfig"; sourceTree = "<group>"; };
 		F30E265EB55CAAC7A2669F87 /* Pods-RxMogo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMogo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMogo/Pods-RxMogo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +135,7 @@
 		470DD6B41F2ADC3C00B29724 /* RxMogo */ = {
 			isa = PBXGroup;
 			children = (
+				472A16631F44880E00E4913C /* TableViewSamples */,
 				471824C81F395692007B1848 /* RxMogoExtensions */,
 				472EB1971F38638000642CBA /* DemoService */,
 				470DD6B51F2ADC3C00B29724 /* AppDelegate.swift */,
@@ -163,8 +174,20 @@
 			isa = PBXGroup;
 			children = (
 				471824C91F3956C6007B1848 /* RxMogo+MJRefreshExtension.swift */,
+				4772BAB81F452AA70032C5A7 /* RxMogo+LoadingRefresher.swift */,
+				4772BABA1F4531650032C5A7 /* RxMogo+MGProgressRefresher.swift */,
 			);
 			name = RxMogoExtensions;
+			sourceTree = "<group>";
+		};
+		472A16631F44880E00E4913C /* TableViewSamples */ = {
+			isa = PBXGroup;
+			children = (
+				472A16641F448B2D00E4913C /* ButtonRefreshController.swift */,
+				472A16661F44921C00E4913C /* PullDownRefreshController.swift */,
+				472A16681F44957300E4913C /* PullUpRefreshController.swift */,
+			);
+			name = TableViewSamples;
 			sourceTree = "<group>";
 		};
 		472EB1971F38638000642CBA /* DemoService */ = {
@@ -371,7 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4772BABB1F4531650032C5A7 /* RxMogo+MGProgressRefresher.swift in Sources */,
 				470DD6B81F2ADC3C00B29724 /* ViewController.swift in Sources */,
+				472A16651F448B2D00E4913C /* ButtonRefreshController.swift in Sources */,
+				472A16671F44921C00E4913C /* PullDownRefreshController.swift in Sources */,
 				470DD6E61F2B007D00B29724 /* Operators.swift in Sources */,
 				472EB1961F3860A000642CBA /* TableViewTestViewController.swift in Sources */,
 				472EB19B1F387B2800642CBA /* TableViewTestViewModel.swift in Sources */,
@@ -379,6 +405,8 @@
 				470DD6E41F2ADD7A00B29724 /* ViewModel.swift in Sources */,
 				470DD6B61F2ADC3C00B29724 /* AppDelegate.swift in Sources */,
 				472EB1991F3863A000642CBA /* MockService.swift in Sources */,
+				472A16691F44957300E4913C /* PullUpRefreshController.swift in Sources */,
+				4772BAB91F452AA70032C5A7 /* RxMogo+LoadingRefresher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
