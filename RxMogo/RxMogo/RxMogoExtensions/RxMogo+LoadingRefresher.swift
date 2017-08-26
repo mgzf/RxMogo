@@ -37,14 +37,21 @@ extension PublishSubject
             
         }).flatMap { _ in observableDataSource }
         .do(onNext: { (_) in
-            
             print("endRequest")
             
             if let realAnimation = endAnimation
             {
                 realAnimation()
             }
+        }, onError: { (_) in
+            print("endRequest")
             
+            if let realAnimation = endAnimation
+            {
+                realAnimation()
+            }
+        }, onCompleted: {
+            print("completion")
         })
         
         

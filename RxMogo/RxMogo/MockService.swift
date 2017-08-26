@@ -10,6 +10,10 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+struct MockError : Error {
+    
+}
+
 //MARK : - Demo api
 class Demo
 {
@@ -33,12 +37,12 @@ class Demo
 //MARK : - Demo service
 class MockService: NSObject
 {
-    func provideMock(on page : Int) -> Observable<[Demo]>
+    func provideMock(on page : Int) -> Observable<Result<[Demo]>>
     {
-        return Observable<[Demo]>.create({ (observer) -> Disposable in
+        return Observable<Result<[Demo]>>.create({ (observer) -> Disposable in
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: {
-                observer.on(.next(Demo.buildDemos(on : page)))
+                observer.onNext(Result.error(MockError()))
                 observer.onCompleted()
             })
 

@@ -10,8 +10,10 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class TableViewTestViewModel
+class TableViewTestViewModel : MGRxRequestable , NeedHandleRequestError
 {
+    var errorProvider : PublishSubject<RxMGError> = PublishSubject<RxMGError>()
+    
     let disposeBag = DisposeBag()
     
     let service = MockService()
@@ -32,7 +34,9 @@ class TableViewTestViewModel
     
     func initial()
     {
-        serviceDriver = page.asObservable().flatMap{ self.service.provideMock(on: $0).map({ demos -> [Demo] in
+        let originResult = page.asObservable().flatMap { self.service.provideMock(on: $0) }
+        
+        serviceDriver = filterError(requestSignal: originResult).map { (demos) -> [Demo] in
             if self.page.value == 0
             {
                 self.finalDemos = demos
@@ -41,9 +45,21 @@ class TableViewTestViewModel
             {
                 self.finalDemos.append(contentsOf: demos)
             }
-            
             return self.finalDemos
-        }) }
+        }
+        
+        //        serviceDriver = page.asObservable().flatMap{ self.service.provideMock(on: $0).map({ demo -> [Demo] in
+//            if self.page.value == 0
+//            {
+//                self.finalDemos = demo
+//            }
+//            else
+//            {
+//                self.finalDemos.append(contentsOf: demos)
+//            }
+//            
+//            return self.finalDemos
+//        }) }
         
         nextPage.map { self.page.value + 1 }.bind(to: page).disposed(by: disposeBag)
         

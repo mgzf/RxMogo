@@ -39,11 +39,15 @@ class ButtonRefreshController: UIViewController {
     }
 }
 
-extension ButtonRefreshController
+extension ButtonRefreshController : NeedHandlErrorOnView
 {
     fileprivate func configRx()
     {
-    
+        viewModel
+            .errorProvider
+            .bind(to: errorViewProvider(on: self.tableView))
+            .disposed(by: self.disposeBag)
+        
         dataRefresher.asLoadingAnimated(mapTo: viewModel.serviceDriver,
                                         onView: tableView)
             .bind(to: self.tableView.rx.items(cellIdentifier: "Cell")) {

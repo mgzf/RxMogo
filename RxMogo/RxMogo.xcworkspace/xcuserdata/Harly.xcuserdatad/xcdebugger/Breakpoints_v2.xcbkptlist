@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RxMogo/TableViewTestViewModel.swift"
-            timestampString = "524589526.078014"
+            timestampString = "525427609.995663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "initial()"
             landmarkType = "7">
          </BreakpointContent>
@@ -159,6 +159,133 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6"
             endingLineNumber = "6">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxMogo/TableViewTestViewModel.swift"
+            timestampString = "525427609.995663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "initial()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxMogo.TableViewTestViewModel.initial () -&gt; ()"
+                  moduleName = "RxMogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Harly/Desktop/DevCenter/HarlyGitReferences/MVVM/RxMogo/RxMogo/RxMogo/TableViewTestViewModel.swift"
+                  timestampString = "525419399.074034"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxMogo.TableViewTestViewModel.(initial () -&gt; ()).(closure #1)"
+                  moduleName = "RxMogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Harly/Desktop/DevCenter/HarlyGitReferences/MVVM/RxMogo/RxMogo/RxMogo/TableViewTestViewModel.swift"
+                  timestampString = "525419399.075531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxMogo.TableViewTestViewModel.(initial () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "RxMogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Harly/Desktop/DevCenter/HarlyGitReferences/MVVM/RxMogo/RxMogo/RxMogo/TableViewTestViewModel.swift"
+                  timestampString = "525419399.076909"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxMogo/MockService.swift"
+            timestampString = "525426399.213431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "provideMock(on:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxMogo.MockService.(provideMock (on : Swift.Int) -&gt; RxSwift.Observable&lt;Swift.Array&lt;RxMogo.Demo&gt;&gt;).(closure #1)"
+                  moduleName = "RxMogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Harly/Desktop/DevCenter/HarlyGitReferences/MVVM/RxMogo/RxMogo/RxMogo/MockService.swift"
+                  timestampString = "525419402.462172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RxMogo.MockService.(provideMock (on : Swift.Int) -&gt; RxSwift.Observable&lt;Swift.Array&lt;RxMogo.Demo&gt;&gt;).(closure #1).(closure #1)"
+                  moduleName = "RxMogo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Harly/Desktop/DevCenter/HarlyGitReferences/MVVM/RxMogo/RxMogo/RxMogo/MockService.swift"
+                  timestampString = "525419402.464874"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxMogo/MockService.swift"
+            timestampString = "525426399.213431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "provideMock(on:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
